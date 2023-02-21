@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    .Instagram{
+        width: 100%;
+        height: 100vh;
+        background: #091836;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+     
+    .Box1{
+        height: 150px;
+        width: 150px;
+        background:radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+         /* background: tomato; */
+         border-radius: 30px;
+         display: grid;
+         place-items: center;
+         justify-content: center;
+
+    }
+    .Circle {
+        height: 110px;
+        width: 110px;
+        border: 10px solid #ffff;
+        background-color: transparent;
+        border: 8px solid #fff;
+        border-radius: 30px;
+        position: relative;
+        display: grid;
+        place-items: center;
+
+    }
+    .Circle::before{
+        content: '';
+        width: 30px;
+        height: 30px;
+        background-color: transparent;
+        border: 8px solid #fff;
+        border-radius: 50%;
+        position: absolute;
+    }
+
+    .Circle::after{
+        content: '';
+        width: 10px;
+        height: 10px;
+        background-color: #fff;
+        border: 1.5 px solid #fff;
+        border-radius: 50%;
+        position: absolute;
+        top: 11px;
+        right: 12px;
+
+    }
+
+</style>
+<body>
+    <div class="Instagram">
+        <div class="Box1">
+            <div class="Circle"></div>
+        </div>
+    </div>
+</head>
+</body>
+</html>
